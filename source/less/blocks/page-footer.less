@@ -1,3 +1,23 @@
 .page-footer {
-  background-color: #292929;
+  background-color: @bg-grey-1;
+  color: #ffffff;
+}
+
+.social__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+
+.page-footer__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 64px;
+  }
+
+  @media (min-width: @decktop-width) {
+    margin: auto;
+    max-width: 960px;
+  }
 }
