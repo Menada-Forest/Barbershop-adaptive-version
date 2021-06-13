@@ -1,3 +1,17 @@
-.reviews {
-  background-color: #F8F5F2;
+.reviews__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 64px;
+  }
+
+  @media (min-width: @decktop-width) {
+    margin: auto;
+    max-width: 960px;
+  }
+}
+
+.reviews__prev,
+.reviews__next {
+  @media (max-width: @tablet-width) {
+    display: none;
+  }
 }

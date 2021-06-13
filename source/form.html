@@ -52,7 +52,7 @@
         <form action="#" method="POST">
           <fieldset class="form__contacts">
             <legend class="visually-hidden">Контактная информация</legend>
-            <div class="form__group">
+            <div class="form__group form__group--full-name">
               <label class="visually-hidden" for="surname">Фамилия</label>
               <input class="form__input" name="surname" type="text" id="surname" placeholder="Фамилия"><br>
               <label class="visually-hidden" for="name">Имя</label>
@@ -60,7 +60,7 @@
               <label class="visually-hidden" for="middle-name">Отчество</label>
               <input class="form__input" name="middle-name" type="text" id="middle-name" placeholder="Отчество"><br>
             </div>
-            <div class="form__group">
+            <div class="form__group form__group--contacts">
               <label class="visually-hidden" for="phone">Контактный телефон</label>
               <input class="form__input" name="phone" type="tel" id="phone" placeholder="Контактный телефон"><br>
               <label class="visually-hidden" for="email">Контактный e-mail</label>
@@ -75,7 +75,7 @@
 
           <fieldset class="form__choose">
             <legend class="form__legend">Выберите модель бороды</legend>
-            <ul class="form__list">
+            <ul class="form__list form__list--radio">
               <li class="form__input">
                 <label class="form__radio" for="admiral">Адмирал</label>
                 <input type="radio" name="beard-model" id="admiral" value="admiral">
@@ -101,7 +101,7 @@
 
           <fieldset class="form__services">
             <legend class="form__legend">Дополнительные услуги</legend>
-            <ul class="form__list">
+            <ul class="form__list form__list--check">
               <li class="form__input">
                 <label class="form__check" for="dye-beard">Подкрасить бороду</label>
                 <input type="checkbox" name="add-services-1" id="dye-beard" value="dye-beard">

@@ -1,3 +1,30 @@
 .advantages {
-  background-color: #242424;
+  background-color: @bg-grey-1;
+  color: #ffffff;
+}
+
+.advantages__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 64px;
+  }
+
+  @media (min-width: @decktop-width) {
+    margin: auto;
+    max-width: 960px;
+  }
+}
+
+.slider__list {
+  list-style: none;
+  padding: 0;
+
+  @media (min-width: @decktop-width) {
+    display: flex;
+  }
+}
+
+.advantages__toggles {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

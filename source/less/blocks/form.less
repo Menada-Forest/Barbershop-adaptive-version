@@ -1,3 +1,83 @@
 .form {
-  background-color: #F8F5F2;
+  background-color: @bg-lightgrey;
+  color: #000000;
+}
+
+.form__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 64px;
+  }
+
+  @media (min-width: @decktop-width) {
+    margin: auto;
+    max-width: 960px;
+  }
+}
+
+.form__contacts,
+.form__choose,
+.form__services {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__group {
+  margin-bottom: 35px;
+}
+
+.form__group--full-name {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: @decktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.form__group--contacts {
+  @media (min-width: @decktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__input,
+.form__additionally {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+// радиобаттоны и чекбоксы
+
+.form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__list--radio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, 200px);
+
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.form__list--check {
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, 30px);
+  }
+
+  @media (min-width: @decktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+
+  }
 }

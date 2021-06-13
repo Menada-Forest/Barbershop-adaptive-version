@@ -1,0 +1,28 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  background-color: @bg-grey-1;
+  color: #ffffff;
+
+}
+
+.page-header__logo {
+  height: 85px;
+  text-align: center;
+
+@media (min-width: @tablet-width) {
+    order: 2;
+    height: 400px;
+    background-image: url(../img/bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+@media (min-width: @decktop-width) {
+    height: 650px;
+    background-image: url(../img/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

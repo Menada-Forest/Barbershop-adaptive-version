@@ -1,3 +1,23 @@
 .price {
-  background-color: #4A4A4A;
+  background-color: @bg-grey-2;
+  color: #ffffff;
+}
+
+
+.price__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 64px;
+  }
+
+  @media (min-width: @decktop-width) {
+    margin: auto;
+    max-width: 960px;
+    display: flex;
+  }
+}
+
+.table__number {
+  @media (max-width: @tablet-width) {
+    display: none;
+  }
 }
